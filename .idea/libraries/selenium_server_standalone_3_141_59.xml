@@ -3,6 +3,8 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/libraries/selenium-server-standalone-3.141.59.jar!/" />
       <root url="jar://$PROJECT_DIR$/libraries/testng-7.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/slf4j-api-2.0.9.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/slf4j-simple-2.0.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
