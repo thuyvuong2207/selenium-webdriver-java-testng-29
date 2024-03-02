@@ -7,6 +7,13 @@
       <root url="jar://$USER_HOME$/Downloads/slf4j-simple-2.0.9.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libraries/selenium-server-standalone-3.141.59.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/selenium-server-standalone-3.141.59.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/selenium-server-standalone-3.141.59.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/selenium-server-standalone-3.141.59.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/selenium-server-standalone-3.141.59.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/client-combined-3.141.59-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
