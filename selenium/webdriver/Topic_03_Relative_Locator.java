@@ -60,7 +60,6 @@ public class Topic_03_Relative_Locator {
 //                .toRightOf(rememberMeCheckbox);
 //    }
 
-
     @AfterClass
     public void afterClass() {
         driver.quit();
