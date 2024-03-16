@@ -33,8 +33,6 @@ public class Topic_02_Selenium_Locator {
 /*<input class="email" autofocus="" type="email" data-val="true" data-val-email="Wrong email" data-val-required="Please enter your email" id="Email" name="Email">
 */
 
-
-
     // Selenium version 1.x 2.x 3.x 4.x
     // 8 locators
     // Selenium locators = HTML attributes
@@ -132,7 +130,7 @@ public class Topic_02_Selenium_Locator {
 
         // CSS with link
         driver.findElement(By.xpath("//a[@href='/customer/addresses']"));  // search by link href
-        driver.findElement(By.xpath("//a[text()='Addresses']"));  // search by linktext
+        driver.findElement(By.xpath("//a[text()='Addresses']"));  // search by linkText
 
 
         // CSS with partial link
