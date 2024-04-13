@@ -19,7 +19,6 @@ public class Topic_10_Custom_Dropdown {
     // Explicit Wait - Wait tường minh: chờ 1 trạng thái cụ thể của element
     // Visible/ Invisible/ Presence/ Number/ Clickable/ ..
     WebDriverWait explicitWait;
-
     @BeforeClass
     public void beforeClass() {
         // Init driver
@@ -96,7 +95,7 @@ public class Topic_10_Custom_Dropdown {
     @Test
     public void TC_04_Editable() {
         driver.get("https://react.semantic-ui.com/maximize/dropdown-example-search-selection/");
-        selectItemInEditableDropdown(("input.search", "div.item span","Belarus");
+        selectItemInEditableDropdown("input.search", "div.item span","Belarus");
         Assert.assertEquals(driver.findElement(By.cssSelector("div.divider.text")).getText(),"Belarus");
         sleepInSeconds(3);
 
