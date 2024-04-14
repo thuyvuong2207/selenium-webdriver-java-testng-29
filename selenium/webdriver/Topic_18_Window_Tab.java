@@ -16,7 +16,6 @@ import java.util.Set;
 
 public class Topic_18_Window_Tab {
     WebDriver driver;
-    WebDriverWait explicitWait;
 
     @BeforeClass
     public void beforeClass() {
