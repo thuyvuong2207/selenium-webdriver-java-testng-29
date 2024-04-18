@@ -3,6 +3,7 @@ package webdriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,7 +28,6 @@ public class Topic_18_Window_Tab {
 
     @Test
     public void TC_13_Window_Tab() {
-
         driver.get("https://automationfc.github.io/basic-form/index.html");
         sleepInSeconds(3);
         // Get ID of current window
@@ -48,8 +48,46 @@ public class Topic_18_Window_Tab {
 
         // Switch to window with title Facebook
         switchWindowByTitle("Facebook - log in or sign up");
+
+        closeAllWindowsWithoutParent(basicFormID);
     }
 
+    @Test
+    public void TC_14_Window_Tab() {
+        driver.get("http://live.techpanda.org/");
+        driver.findElement(By.xpath("//a[text()='Mobile']")).click();
+        sleepInSeconds(3);
+
+        driver.findElement(By.xpath("//a[@title='Xperia']/following-sibling::div//div[@class='actions']//a[@class='link-compare']")).click();
+        sleepInSeconds(3);
+        Assert.assertEquals(driver.findElement(By.cssSelector("li.success-msg")).getText(),"The product Sony Xperia has been added to comparison list.");
+
+        driver.findElement(By.xpath("//a[@title='Samsung Galaxy']/following-sibling::div//div[@class='actions']//a[@class='link-compare']")).click();
+        sleepInSeconds(3);
+        Assert.assertEquals(driver.findElement(By.cssSelector("li.success-msg")).getText(),"The product Samsung Galaxy has been added to comparison list.");
+
+        driver.findElement(By.cssSelector("button[title='Compare']")).click();
+        sleepInSeconds(3);
+
+        switchWindowByTitle("Products Comparison List - Magento Commerce");
+        Assert.assertEquals(driver.findElement(By.cssSelector("div.page-title>h1")).getText(),"COMPARE PRODUCTS");
+
+        driver.close();
+        switchWindowByTitle("Mobile");
+        driver.findElement(By.cssSelector("input#search")).sendKeys("Samsung Galaxy");
+        sleepInSeconds(3);
+
+    }
+
+    @Test
+    public void TC_15_Selenium_Ver4() {
+        driver.get("http://live.techpanda.org/");
+        System.out.println("Driver ID " + driver.toString());
+
+
+        // New 1 window in current browser
+        driver.switchTo().newWindow(WindowType.TAB);
+    }
 
     @AfterClass
     public void afterClass() {
@@ -86,5 +124,18 @@ public class Topic_18_Window_Tab {
                 break;
             }
         }
+    }
+
+    public void closeAllWindowsWithoutParent (String parentID) {
+        Set<String> allIDs = driver.getWindowHandles();
+        for (String ID : allIDs){
+            if (!ID.equals(parentID)) {
+                driver.switchTo().window(ID);
+                System.out.println(ID);
+                driver.close();
+            }
+        }
+        driver.switchTo().window(parentID);
+        System.out.println(parentID);
     }
 }
