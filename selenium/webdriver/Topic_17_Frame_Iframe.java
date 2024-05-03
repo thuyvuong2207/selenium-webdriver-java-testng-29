@@ -16,7 +16,6 @@ import java.time.Duration;
 
 public class Topic_17_Frame_Iframe {
     WebDriver driver;
-    WebDriverWait explicitWait;
 
     @BeforeClass
     public void beforeClass() {
@@ -51,7 +50,8 @@ public class Topic_17_Frame_Iframe {
         sleepInSeconds(2);
         driver.findElement(By.cssSelector("button#login")).click();
         sleepInSeconds(2);
-        Assert.assertEquals(driver.findElement(By.cssSelector("div#message-error")).getText(),"Username and password are both required.");
+        Assert.assertEquals(driver.findElement(By.cssSelector("div#message-error"))
+                .getText(),"Username and password are both required.");
 
 /*
         // Switch from B to C
@@ -64,7 +64,6 @@ public class Topic_17_Frame_Iframe {
 
     @Test
     public void TC_12_Frame_HDFC_Bank() {
-
         driver.get("https://netbanking.hdfcbank.com/netbanking/");
         sleepInSeconds(10);
 
@@ -75,7 +74,8 @@ public class Topic_17_Frame_Iframe {
         driver.findElement(By.cssSelector("input[name='fldLoginUserId']")).sendKeys("automationtest");
         driver.findElement(By.cssSelector("a.btn-primary.login-btn")).click();
         sleepInSeconds(5);
-        Assert.assertTrue(driver.findElement(By.xpath("//label[text()='Password/IPIN']/following-sibling::md-input-container/input")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//label[text()='Password/IPIN']/following-sibling::md-input-container/input"))
+                .isDisplayed());
 
     }
 
