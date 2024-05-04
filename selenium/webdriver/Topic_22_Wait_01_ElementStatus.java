@@ -1,7 +1,6 @@
 package webdriver;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +13,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Topic_22_Wait_01 {
+public class Topic_22_Wait_01_ElementStatus {
     WebDriver driver;
     WebDriverWait explicitWait;
     By reconfirmEmailTextbox = By.cssSelector("input[name='reg_email_confirmation__']");
@@ -107,7 +106,7 @@ public class Topic_22_Wait_01 {
         WebElement reconfirmEmail = driver.findElement(reconfirmEmailTextbox);
 
         // Close popup
-        driver.findElement(By.xpath("//div[text()='Sign Up']/parent::div/preceding-sibling:: img")).click();
+        driver.findElement(By.xpath("//div[text()='Sign Up']/parent::div/preceding-sibling::img")).click();
         sleepInSeconds(3);
 
         // Explicit wait when element is invisible
