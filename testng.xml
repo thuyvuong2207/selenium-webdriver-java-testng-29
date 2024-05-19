@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Webdriver">
+    <test verbose="2" preserve-order="true"
+          name="Run on Chrome">
+        <classes>
+            <class name="testng.Topic_01_Sample">
+                <methods>
+                    <include name="testGetRandomNumber"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_00_Template">
+                <methods>
+                    <include name="TC_00_"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_01_Check_Environment">
+                <methods>
+                    <include name="TC_01_Url"/>
+                    <include name="TC_02_Logo"/>
+                    <include name="TC_03_Form"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_02_Selenium_Locator">
+                <methods>
+                    <include name="TC_01_ID"/>
+                    <include name="TC_02_Class"/>
+                    <include name="TC_03_Name"/>
+                    <include name="TC_04_tagName"/>
+                    <include name="TC_05_LinkText"/>
+                    <include name="TC_06_Partial_LinkText"/>
+                    <include name="TC_07_Css"/>
+                    <include name="TC_08_Xpath"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_03_Relative_Locator">
+                <methods>
+                    <include name="TC_01_Relative"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_04_XPath_Css">
+                <methods>
+                    <include name="Register_01_Empty_Data"/>
+                    <include name="Register_02_Invalid_Email"/>
+                    <include name="Register_03_Incorrect_Confirm_Email"/>
+                    <include name="Register_04_Invalid_Password"/>
+                    <include name="Register_05_Invalid_Confirmation_Password"/>
+                    <include name="Register_06_Invalid_Phone_Number"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_05_Run_More_Browsers">
+                <methods>
+                    <include name="TC_01_Run_On_Chrome"/>
+                    <include name="TC_02_Run_On_Firefox"/>
+                    <include name="TC_03_Run_On_Edge"/>
+                    <include name="TC_04_Run_On_Safari"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_07_WebElement_Commands_01">
+                <methods>
+                    <include name="TC_01_Verify_URL"/>
+                    <include name="TC_02_Verify_Title"/>
+                    <include name="TC_03_Page_Navigation"/>
+                    <include name="TC_04_Page_Source"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_07_WebElement_Commands_02">
+                <methods>
+                    <include name="TC_01_isDisplayed"/>
+                    <include name="TC_02_isEnabled"/>
+                    <include name="TC_03_isSelected"/>
+                    <include name="TC_04_RegisterAtMailchimp"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_08_TextBox_TextArea">
+                <methods>
+                    <include name="Login_01_Empty_Email_And_Pw"/>
+                    <include name="Login_02_Invalid_Email"/>
+                    <include name="Login_03_Invalid_Pw"/>
+                    <include name="Login_04_Incorrect_Email_Or_Pw"/>
+                    <include name="Login_05_Succeed"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_09_Default_Dropdown">
+                <methods>
+                    <include name="TC_01_Register"/>
+                    <include name="TC_02_Login"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_10_Custom_Dropdown">
+                <methods>
+                    <include name="TC_00"/>
+                    <include name="TC_01_JQuery"/>
+                    <include name="TC_02_React"/>
+                    <include name="TC_03_VueJs"/>
+                    <include name="TC_04_Editable"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_11_Button">
+                <methods>
+                    <include name="TC_01_Button"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_12_Checkbox_Radio">
+                <methods>
+                    <include name="TC_02_Default_Checkbox_Radio"/>
+                    <include name="TC_03_Default_Checkbox_Radio"/>
+                    <include name="TC_04_Select_All_Checkboxes"/>
+                    <include name="TC_06_Custom_Checkbox_Or_Radio"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_13_Alert">
+                <methods>
+                    <include name="TC_07_Accept_Alert"/>
+                    <include name="TC_08_Confirm_Alert"/>
+                    <include name="TC_09_Prompt_Alert"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_14_Action">
+                <methods>
+                    <include name="TC_01_Button"/>
+                    <include name="TC_01_JQuery"/>
+                    <include name="TC_02_React"/>
+                    <include name="TC_03_VueJs"/>
+                    <include name="TC_04_Editable"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_15_Popup_01">
+                <methods>
+                    <include name="TC_01_Fixed_Pop_In_DOM_01"/>
+                    <include name="TC_03_Fixed_Pop_Not_In_DOM_03"/>
+                    <include name="TC_04_Fixed_Pop_Not_In_DOM_04"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_16_Popup_02">
+                <methods>
+                    <include name="TC_05_Random_Popup_Not_In_DOM"/>
+                    <include name="TC_06_Random_Popup_In_DOM"/>
+                    <include name="TC_07_Random_Popup_Not_In_DOM"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_17_Frame_Iframe">
+                <methods>
+                    <include name="TC_11_Iframe_Form_site"/>
+                    <include name="TC_12_Frame_HDFC_Bank"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_18_Window_Tab">
+                <methods>
+                    <include name="TC_13_Window_Tab"/>
+                    <include name="TC_14_Window_Tab"/>
+                    <include name="TC_15_Selenium_Ver4"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_20_Javascript_Executor">
+                <methods>
+                    <include name="TC_01_Javascript_Executor"/>
+                    <include name="TC"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_22_Wait_01_ElementStatus">
+                <methods>
+                    <include name="TC_01_Visible"/>
+                    <include name="TC_02_Invisible_In_DOM"/>
+                    <include name="TC_02_Invisible_Not_In_DOM"/>
+                    <include name="TC_03_Presence"/>
+                    <include name="TC_04_Staleness"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_23_Wait_02_FindElement">
+                <methods>
+                    <include name="TC_01_Find_Element"/>
+                    <include name="TC_02_Find_Elements"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_24_Wait_03_ImplicitWait">
+                <methods>
+                    <include name="TC_01_Implicit_Wait_Equal_5s"/>
+                    <include name="TC_02_Implicit_Wait_Less_Than_5s"/>
+                    <include name="TC_03_Implicit_Wait_Greater_Than_5s"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_25_Wait_04_Static_Dead_Hard">
+                <methods>
+                    <include name="TC_01_Implicit_Wait_Equal_5s"/>
+                    <include name="TC_02_Implicit_Wait_Less_Than_5s"/>
+                    <include name="TC_03_Implicit_Wait_Greater_Than_5s"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_26_Wait_05_Explicit_01_Knowledge">
+                <methods>
+                    <include name="TC_01_Explicit_Wait_Basic"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_27_Wait_06_Explicit_02">
+                <methods>
+                    <include name="TC_04_Explicit_Wait_Equal_5s"/>
+                    <include name="TC_04_Explicit_Wait_Less_Than_5s"/>
+                    <include name="TC_04_Explicit_Wait_Greater_Than_5s"/>
+                    <include name="TC_05_Explicit_Wait_Equal_5s"/>
+                    <include name="TC_05_Explicit_Wait_Less_Than_5s"/>
+                    <include name="TC_05_Explicit_Wait_Greater_Than_5s"/>
+                    <include name="TC_06_Explicit_Wait_DateTime"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_28_Wait_07_Explicit_03">
+                <methods>
+                    <include name="TC_01_Ajax_loading"/>
+                    <include name="TC_02_Upload_File"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_29_Wait_08_Mix_Explicit_Implicit">
+                <methods>
+                    <include name="TC_01_Implicit_Only_Found"/>
+                    <include name="TC_02_Implicit_Only_NotFound"/>
+                    <include name="TC_03_Explicit_Only_Found"/>
+                    <include name="TC_04_Explicit_Only_NotFound_Param_By"/>
+                    <include name="TC_04_Explicit_Only_NotFound_Param_WebElement"/>
+                    <include name="TC_05_Mix_Found"/>
+                </methods>
+            </class>
+            <class name="webdriver.Topic_30_Wait_09_Fluent">
+                <methods>
+                    <include name="TC_0"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
