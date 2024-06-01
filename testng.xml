@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Selenium Webdriver">
-    <groups>
-        <run>
-            <include name="category"/>
-        </run>
-    </groups>
-    <test verbose="2"
-          name="Run on Chrome">
-        <packages>
-            <package name="categories"/>
-            <package name="orders"/>
+<suite name="Selenium Webdriver" parallel="tests">
 
-        </packages>
+    <parameter name="environment" value="dev"/>
+    <parameter name="environment" value="stag"/>
+    <parameter name="environment" value="prod"/>
+    <parameter name="environment" value="sandbox"/>
+<!--    optional env - sanbox-->
+
+    <!--    Global environment-->
+    <test name="Run on Chrome">
+        <!--        Local environment-->
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="latest"/>
+        <classes>
+            <class name="testng.Topic_09_Parameters"/>
+        </classes>
     </test>
-</suite>
+    <test name="Run on Firefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="version" value="latest"/>
+        <classes>
+            <class name="testng.Topic_09_Parameters"/>
+        </classes>
+    </test>
+    <test name="Run on Safari">
+        <parameter name="browser" value="safari"/>
+        <parameter name="version" value="latest"/>
+        <classes>
+            <class name="testng.Topic_09_Parameters"/>
+        </classes>
+    </test>
+
+        </suite>
