@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Selenium Webdriver" parallel="tests">
+<suite name="Selenium Webdriver" parallel="tests" thread-count="6">
 
-    <parameter name="environment" value="dev"/>
-    <parameter name="environment" value="stag"/>
-    <parameter name="environment" value="prod"/>
-    <parameter name="environment" value="sandbox"/>
+<!--    <parameter name="environment" value="dev"/>-->
+<!--    <parameter name="environment" value="stag"/>-->
+<!--    <parameter name="environment" value="prod"/>-->
+<!--    <parameter name="environment" value="sandbox"/>-->
 <!--    optional env - sanbox-->
 
     <!--    Global environment-->
@@ -14,22 +14,7 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="version" value="latest"/>
         <classes>
-            <class name="testng.Topic_09_Parameters"/>
+            <class name="testng.Topic_12_Parallel"/>
         </classes>
     </test>
-    <test name="Run on Firefox">
-        <parameter name="browser" value="firefox"/>
-        <parameter name="version" value="latest"/>
-        <classes>
-            <class name="testng.Topic_09_Parameters"/>
-        </classes>
-    </test>
-    <test name="Run on Safari">
-        <parameter name="browser" value="safari"/>
-        <parameter name="version" value="latest"/>
-        <classes>
-            <class name="testng.Topic_09_Parameters"/>
-        </classes>
-    </test>
-
-        </suite>
+</suite>
