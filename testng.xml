@@ -14,7 +14,39 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="version" value="latest"/>
         <classes>
-            <class name="testng.Topic_12_Parallel"/>
+            <class name="javaBasic.Topic_07_SwitchCase"/>
+        </classes>
+    </test>
+    <test name="Run on Firefox">
+        <!--        Local environment-->
+        <parameter name="browser" value="firefox"/>
+        <parameter name="version" value="latest"/>
+        <classes>
+            <class name="javaBasic.Topic_07_SwitchCase"/>
+        </classes>
+    </test>
+    <test name="Run on Edge">
+        <!--        Local environment-->
+        <parameter name="browser" value="edge"/>
+        <parameter name="version" value="latest"/>
+        <classes>
+            <class name="javaBasic.Topic_07_SwitchCase"/>
+        </classes>
+    </test>
+    <test name="Run on Safari">
+        <!--        Local environment-->
+        <parameter name="browser" value="safari"/>
+        <parameter name="version" value="latest"/>
+        <classes>
+            <class name="javaBasic.Topic_07_SwitchCase"/>
+        </classes>
+    </test>
+    <test name="Run on IE">
+        <!--        Local environment-->
+        <parameter name="browser" value="IE"/>
+        <parameter name="version" value="latest"/>
+        <classes>
+            <class name="javaBasic.Topic_07_SwitchCase"/>
         </classes>
     </test>
 </suite>
